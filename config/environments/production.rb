@@ -1,6 +1,11 @@
 Omrails::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
+  # added to integrate bootstrap v2 with simple form v2
+  config.label_class = 'control-label'
+
+  config.eager_load = false
+
   # Code is not reloaded between requests
   config.cache_classes = true
 
@@ -64,4 +69,7 @@ Omrails::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+
+  # In production, :host should be set to the actual host.
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end

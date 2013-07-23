@@ -2,13 +2,15 @@
 	<div class = 'span8'>
 		<div class="hero-unit">
 		  <h1>Erik Gibbons</h1>
-		  <p>Does Erik Gibbons really = fail? Find out for yourself...</p>
+		  <p>Does <em>Erik Gibbons</em> = fail? Find out for yourself...</p>
 		  <p>
-		    <%= link_to 'Learn More', erik_path, class: 'btn btn-primary btn-large' %>
+		    <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary btn-large' %>
 		  </p>
 		</div>
 	</div>
 	<div class = 'span4'>
-		<h2>Navigation Bar</h2>
+		<% if user_signed_in? %>
+			<h1>You're logged in </h1>
+		<% end %>
 	</div>
 </div>
