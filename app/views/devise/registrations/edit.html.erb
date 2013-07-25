@@ -4,21 +4,21 @@
   
   <%= f.error_notification %>
 
-  <%= f.input :name, label: "Name&nbsp;&nbsp;&nbsp;&nbsp;", required: true %> <p/>
+  <%= f.input :name, label: "Name", required: true %> <p/>
 
-  <%= f.input :email, label: "Email&nbsp;&nbsp;&nbsp;&nbsp;", required: true%> <p/>
+  <%= f.input :email, label: "Email", required: true%> <p/>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
 
-  <%= f.input :password, label: "New Password&nbsp;&nbsp;&nbsp;&nbsp;"%>  <p/>
+  <%= f.input :password, label: "New Password"%>  <p/>
 
-  <%= f.input :password_confirmation, label: "Confirm &nbsp;&nbsp;&nbsp;&nbsp;" %> 
+  <%= f.input :password_confirmation, label: "Confirm " %> 
 
   <br/><br/>
 
-  <%= f.input :current_password, label: "Current Password&nbsp;&nbsp;&nbsp;&nbsp;", required: true %> <p/>
+  <%= f.input :current_password, label: "Current Password", required: true %> <p/>
 
   <div class = 'form-actions'>
     <%= f.submit "Update", class: 'btn btn-primary' %>

@@ -2,13 +2,13 @@ source 'https://rubygems.org'
 
 #commented out static version of gems
 
-gem 'rails', '3.2.12'
-#gem 'rails'
+#gem 'rails', '3.2.12'
+gem 'rails', '4.0.0'
 gem 'jquery-rails'
 gem 'devise'
 #gem 'activemodel'
-#gem 'protected_attributes'
-gem 'simple_form'
+gem 'protected_attributes'
+gem 'simple_form', '3.0.0.rc'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
