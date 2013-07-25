@@ -12,6 +12,9 @@ gem 'devise'
 #gem 'activemodel'
 gem 'simple_form', '3.0.0.rc'
 
+#Heroku: Include "rails_12factor" gem to enable all platform features
+gem 'rails_12factor'
+
 #gems to help with transition
 gem 'protected_attributes'
 gem 'rails-observers'
