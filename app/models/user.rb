@@ -6,7 +6,9 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   # attr_accessible :title, :body
 
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :provider, :uid, :as => [:default, :admin]
+  attr_accessible :name, :email, :password, :password_confirmation, :remember_me, :provider, :uid, :as => [:default, :admin]
 
+  has_many :pins
+  #validates_presence_of :name, :email
   
 end

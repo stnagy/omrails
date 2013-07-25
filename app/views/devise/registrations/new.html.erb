@@ -4,11 +4,13 @@
   
   <%= f.error_notification %>
 
-  <%= f.input :email, label: "Email&nbsp;&nbsp;&nbsp;&nbsp;", placeholder: 'user@example.com' %>
+  <%= f.input :name, label: "Name&nbsp;&nbsp;&nbsp;&nbsp;", required: true%> <p/>
+  
+  <%= f.input :email, label: "Email&nbsp;&nbsp;&nbsp;&nbsp;", placeholder: 'user@example.com', required: true %>
   <p />
-  <%= f.input :password,label: "Password&nbsp;&nbsp;&nbsp;&nbsp;" %>
+  <%= f.input :password,label: "Password&nbsp;&nbsp;&nbsp;&nbsp;", required: true %>
   <p />
-  <%= f.input :password_confirmation, label: "Confirm Password&nbsp;&nbsp;&nbsp;&nbsp;" %>
+  <%= f.input :password_confirmation, label: "Confirm Password&nbsp;&nbsp;&nbsp;&nbsp;", required: true %>
 
   <div class = 'form-actions'>
   	<%= f.submit "Sign up", class: "btn btn-primary"%>
