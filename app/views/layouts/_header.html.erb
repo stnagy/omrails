@@ -18,7 +18,9 @@
         <ul class = 'nav'>
         	<li><%= link_to 'Home', root_path %></li>
       		<li><%= link_to 'About Us', about_path %></li>
-      		<li><%= link_to 'Fail', erik_path %></li>
+      		<% if user_signed_in? %>
+            <li><%= link_to 'Fail Pins', pin_home_path %></li>
+          <% end %>
         </ul>
         <ul class = 'nav pull-right'>
         	<% if !user_signed_in? %>

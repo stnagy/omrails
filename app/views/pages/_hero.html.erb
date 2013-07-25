@@ -1,0 +1,21 @@
+<h1>Erik Gibbons</h1>
+  <div class = "row">
+  	<div class = "span6">
+  		<p>Does <em>Erik Gibbons</em> = fail? Find out for yourself...</p>
+  	</div>
+  	<div class = "span4 pull-right">
+  		<% if user_signed_in? %>
+  			<p><em>Logged in</em></p>
+  		<% end %>
+  	</div>
+  </div>
+  <div class = "row">
+		<div class = "span6">
+			<%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary btn-large' %>
+		</div>
+		<div class = "span4 pull-right">
+			<% if user_signed_in? %>
+				<%= link_to 'Go to Fail Pins', pin_home_path, class: 'btn btn-success btn-large' %>
+			<% end %>
+		</div>
+	</div>
