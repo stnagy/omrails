@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+
+#ruby 1.9.3 = latest
 ruby '1.9.3'
 
 #commented out static version of gems
