@@ -4,7 +4,8 @@ Omrails::Application.configure do
   # added to integrate bootstrap v2 with simple form v2
   config.label_class = 'control-label'
 
-  config.eager_load = false
+  config.eager_load = true
+  config.assets.js_compressor = :uglifier
 
   # Code is not reloaded between requests
   config.cache_classes = true

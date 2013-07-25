@@ -8,8 +8,13 @@ gem 'rails', '4.0.0'
 gem 'jquery-rails'
 gem 'devise'
 #gem 'activemodel'
-gem 'protected_attributes'
 gem 'simple_form', '3.0.0.rc'
+
+#gems to help with transition
+gem 'protected_attributes'
+gem 'rails-observers'
+gem 'actionpack-page_caching'
+gem 'actionpack-action_caching'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
