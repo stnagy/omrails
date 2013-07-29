@@ -4,6 +4,8 @@ Omrails::Application.configure do
   # added to integrate bootstrap v2 with simple form v2
   config.label_class = 'control-label'
 
+  Paperclip.options[:command_path] = "/opt/ImageMagick/bin/convert"
+  
   config.eager_load = false
 
   # In the development environment your application's code is reloaded on

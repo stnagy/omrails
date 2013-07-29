@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'devise'
 #gem 'activemodel'
 gem 'simple_form', '3.0.0.rc'
+gem 'paperclip', github: 'thoughtbot/paperclip', branch: 'rails-4'
 
 #Heroku: Include "rails_12factor" gem to enable all platform features
 gem 'rails_12factor'
